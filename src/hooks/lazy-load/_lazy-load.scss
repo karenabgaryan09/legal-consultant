@@ -11,6 +11,12 @@
     [data-lazy="fade-up"] {
         transform: translate3d(0, 100px, 0);
     }
+    [data-lazy="fade-right"] {
+        transform: translate3d(-100px, 0px, 0);
+    }
+    [data-lazy="fade-left"] {
+        transform: translate3d(100px, 0px, 0);
+    }
     [data-lazy="fade-up-30"] {
         transform: translate3d(0, 30px, 0);
     }
@@ -28,8 +34,7 @@
 
 // }
 
-// header,
-// main,
-// footer {
-//     overflow: hidden;
-// }
+
+section  {
+    overflow: hidden;
+}

@@ -16,7 +16,7 @@ const HomeHero = () => {
     });
 
     const y = useTransform(scrollYProgress, [0, 1], [-20, 20]);
-    const bgimage = useTransform(scrollYProgress, [0, 1], [-414, 2000]);
+    const bgimage = useTransform(scrollYProgress, [0, 1], [-360, 2000]);
     // const bgimage = useTransform(scrollYProgress, [0, 1], [-230, 1000]);
     const yValue = useTransform(scrollYProgress, [0, 1], [0, 0]);
     const x = useTransform(scrollYProgress, [0, 1], [0, 120]);
