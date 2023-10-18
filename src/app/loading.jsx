@@ -1,7 +1,16 @@
-const Loading = () => {
-  return (
-    <main>loading...</main>
-  )
-}
+import { Header } from "@/components";
 
-export default Loading
+const Loading = () => {
+    return (
+        <>
+            <Header />
+            <main>
+                <section>
+                    <div className="container">loading...</div>
+                </section>
+            </main>
+        </>
+    );
+};
+
+export default Loading;

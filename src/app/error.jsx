@@ -1,13 +1,20 @@
 "use client";
 
+import { Header } from "@/components";
+
 const error = ({ reset }) => {
     return (
-        <main>
-            <div className="container">
-                <h1>Error Page ㋛</h1>
-                <button onClick={() => reset()}>reset</button>
-            </div>
-        </main>
+       <>
+       <Header/>
+         <main>
+             <section>
+                <div className="container">
+                    <h1>Error Page ㋛</h1>
+                    <button onClick={() => reset()}>reset</button>
+                </div>
+             </section>
+         </main>
+       </>
     );
 };
 

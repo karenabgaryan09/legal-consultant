@@ -9,7 +9,7 @@ import localData from "@/localdata";
 
 const links = [
     { href: "/", title: "home" },
-    { href: "/about", title: "about" },
+    { href: "/about", title: "about us" },
     { href: "/people", title: "people" },
     { href: "/news", title: "news" },
     { href: "/contact", title: "contact" },
@@ -48,7 +48,7 @@ const DrawerChild = ({ parentCallback }) => {
                         buttonName: "civil law",
                         variant: "text",
                         color: "secondary",
-                        content: civilLaw.map(({ href,title }, index) => (
+                        content: civilLaw.map(({ href, title }, index) => (
                             <Link key={index} href={href} className="nav-link" onClick={parentCallback}>
                                 {title}
                             </Link>
@@ -58,7 +58,7 @@ const DrawerChild = ({ parentCallback }) => {
                         buttonName: "commercial law",
                         variant: "text",
                         color: "secondary",
-                        content: commercialLaw.map(({ href,title }, index) => (
+                        content: commercialLaw.map(({ href, title }, index) => (
                             <Link key={index} href={href} className="nav-link" onClick={parentCallback}>
                                 {title}
                             </Link>
@@ -79,10 +79,9 @@ export default function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg">
             <div className="container">
-                <Link className="navbar-brand" href="/">
-                <img src={logo.src} alt="" />
-
-                </Link>
+                <a className="navbar-brand" href="/">
+                    <img src={logo.src} alt="" />
+                </a>
                 {/* <div className="burger">
                     <span></span>
                 </div> */}
@@ -95,33 +94,59 @@ export default function Navbar() {
                 ></Drawer>
 
                 <div className="navbar-collapse" id="navbarSupportedContent">
-                  
                     <ul className="navbar-nav me-auto">
-                    <Dropdown {...{ className: "nav-item", title: "expertise", isInsideClick: true }}>
-                            <h4 className="title">civil law</h4>
-                            {civilLaw.map(({ href, title }, index) => (
-                                <Link href={href} key={index} className="link">
-                                    {title}
-                                    {chevronRight}
-                                </Link>
-                            ))}
-                            <br />
-                            <h4 className="title">commercial law</h4>
-                            {commercialLaw.map(({ href, title }, index) => (
-                                <Link href={href} key={index} className="link">
-                                    {title}
-                                    {chevronRight}
-                                </Link>
-                            ))}
-                        </Dropdown>
-                        {links.map(({ href, title }, index) => (
-                            <li className="nav-item" key={index}>
-                                <Link href={href} className={`nav-link ${pathname === href ? "active" : ""}`}>
-                                    {title}
-                                </Link>
-                            </li>
-                        ))}
-                    
+                        {links.map(({ href, title }, index) => {
+                            return index === 3 ? (
+                                <React.Fragment key={index}>
+                                    <Dropdown
+                                        {...{
+                                            className: "nav-item",
+                                            title: "expertise",
+                                            isInsideClick: true,
+                                        }}
+                                    >
+                                        <h4 className="title">civil law</h4>
+                                        {civilLaw.map(({ href, title }, index) => (
+                                            <Link href={href} key={index} className="link">
+                                                {title}
+                                                {chevronRight}
+                                            </Link>
+                                        ))}
+                                        <br />
+                                        <h4 className="title">commercial law</h4>
+                                        {commercialLaw.map(({ href, title }, index) => (
+                                            <Link href={href} key={index} className="link">
+                                                {title}
+                                                {chevronRight}
+                                            </Link>
+                                        ))}
+                                    </Dropdown>
+                                    <li className="nav-item">
+                                        <Link
+                                            href={href}
+                                            className={`nav-link ${pathname === href ? "active" : ""}`}
+                                        >
+                                            {title}
+                                        </Link>
+                                    </li>
+                                </React.Fragment>
+                            ) : (
+                                <li className="nav-item" key={index}>
+                                    <Link
+                                        href={href}
+                                        className={`nav-link ${pathname === href ? "active" : ""}`}
+                                    >
+                                        {title}
+                                    </Link>
+                                </li>
+                            );
+                        })}
+                        <Button
+                            name="Learn More"
+                            variant="outlined"
+                            color="warning"
+                            className="learn-more-btn"
+                        />
                     </ul>
                 </div>
             </div>

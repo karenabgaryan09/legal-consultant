@@ -35,15 +35,29 @@ html {
 }
 
 body {
-    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
-        "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+   
+    
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+        "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    
+    background-image: url('../../assets/images/pattern.png');
+    background-repeat: repeat;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        background-color: rgba(255,255,255,0.9);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
     main {
         flex: 1;
     }
@@ -64,16 +78,29 @@ code {
     font-weight: 300;
     line-height: 1.2;
     text-transform: capitalize;
+    font-family: "Playfair Display";
 }
 
 .display-1 {
     font-size: calc(1.625rem + 4.5vw);
+    font-weight: 700;
+    line-height: 120%; /* 108px */
+    letter-spacing: 1.8px;
+    margin-bottom: 30px;
 }
 .display-2 {
     font-size: calc(1.575rem + 3.9vw);
+    font-weight: 700;
+    line-height: 120%; /* 72px */
+    letter-spacing: 1.2px;
+    margin-bottom: 30px;
 }
 .display-3 {
     font-size: calc(1.525rem + 3.3vw);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 77.778% */
+    margin-bottom: 30px;
 }
 .display-4 {
     font-size: calc(1.475rem + 2.7vw);
@@ -86,13 +113,16 @@ code {
 }
 @media (min-width: 1200px) {
     .display-1 {
-        font-size: 5rem;
+        // font-size: 5rem;
+        font-size: 90px;
     }
     .display-2 {
-        font-size: 4.5rem;
+        // font-size: 4.5rem;
+        font-size: 60px;
     }
     .display-3 {
-        font-size: 4rem;
+        // font-size: 4rem;
+        font-size: 36px;
     }
     .display-4 {
         font-size: 3.5rem;
@@ -122,8 +152,8 @@ img {
 .container,
 .container-fluid {
     width: 100%;
-    padding-right: 0.75rem;
-    padding-left: 0.75rem;
+    padding-right: 30px;
+    padding-left: 30px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -135,18 +165,18 @@ img {
     // @include mq(768px) {
     //     max-width: 720px; // 48
     // }
-    @include mq(992px) {
-        max-width: 960px; // 32
-    }
+    // @include mq(992px) {
+    //     max-width: 960px; // 32
+    // }
     @include mq(768px) {
-        padding-right: 80px;
-        padding-left: 80px;
+        padding-right: 50px;
+        padding-left: 50px;
     }
     @include mq(1200px) {
-        max-width: calc(1140px + 80px * 2); // 60
+        max-width: calc(1140px + 50px * 2); // 60
     }
     @include mq(1400px) {
-        max-width: calc(1320px + 80px * 2); // 80
+        max-width: calc(1200px + 50px * 2); // 80
     }
     // @include mq(1920px) {
     //     max-width: mw(xl); //full hd
@@ -159,11 +189,11 @@ img {
     // }
 }
 
-.container-fluid {
-    @include mq(1600px) {
-        max-width: calc(1500px + 0.75rem * 2); // 80
-    }
-}
+// .container-fluid {
+//     @include mq(1600px) {
+//         max-width: calc(1500px + 30px * 2); // 80
+//     }
+// }
 
 // BORDERS
 
@@ -266,21 +296,92 @@ img {
 // CONDITIONAL
 
 section {
-    padding: 2rem 0;
-}
-
-@include mq(576px) {
-    section {
-        padding: 4rem 0;
+    padding: 70px 0;
+    @include mq(576px) {
+        padding: 120px 0;
     }
 }
 
-section {
-    &:nth-child(even) {
-        background-color: color(light);
+
+.description {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 138%; /* 33.12px */
+    letter-spacing: 0.5px;
+    @include mq(768px) {
+        font-size: 24px;
+    }
+}
+.description-secondary {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 138%; /* 33.12px */
+    letter-spacing: 0.5px;
+    @include mq(768px) {
+        font-size: 22px;
     }
 }
 
-main {
-    min-height: 300px;
+.text-muted {
+    font-size: 16px;
+    color: color(secondary);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.text {
+    &-1 {
+        font-size: 16px;
+        text-transform: capitalize;
+        font-weight: 400;
+    }
+}
+
+
+.cover {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // filter: grayscale(100%);
+
+}
+
+.markup-custom-style {
+
+    hr {
+        content: "";
+        // margin: 15px 0;
+        display: block;
+        color: #000;
+        opacity: 0.3;
+        //   font-size: 24%;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+    
+    li {
+        margin-bottom: 10px;
+        display: block;
+    
+        position: relative;
+        padding-left: 15px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: #000;
+        }
+    }
 }

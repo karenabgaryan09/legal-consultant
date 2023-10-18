@@ -1,6 +1,6 @@
 import "@/styles/index.scss";
 import { Inter } from "next/font/google";
-import { Header, Footer } from "@/components";
+import { Footer } from "@/components";
 import localData from "@/localdata";
 
 const inter = Inter({ subsets: ["latin"] });

@@ -1,10 +1,12 @@
 
 // PARTIALS
+@import '../assets/fonts/fonts';
 @import './partials/features.scss';
 @import './partials/globals.scss';
 
 // PAGES
-@import '../app/home.scss';
+@import '../app/home/home.scss';
+@import '../app/contact/contact.scss';
 
 // COMPONENTS
 @import '../components/header/header';
@@ -14,3 +16,8 @@
 @import '../components/accordion/accordion';
 @import '../components/drawer/drawer';
 @import '../components/dropdown/dropdown';
+@import '../components/link/link';
+@import '../components/field/field';
+
+// REST
+@import '../hooks/lazy-load/lazy-load';

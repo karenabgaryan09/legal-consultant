@@ -1,27 +1,23 @@
-import Image from "next/image";
-import localData from "@/localdata";
-import { Header } from "../components";
-
-const HomeHero = () => {
-    const { heroCover } = localData.images;
-    return (
-        <section className="hero">
-            <img className="cover" src={heroCover.src} alt="" />
-            <div className="container">header</div>
-        </section>
-    );
-};
+import { Header } from "@/components";
+import HomeHero from "./home/HomeHero.jsx";
+import WhyUsSection from "./home/WhyUsSection.jsx";
+import ProcessSection from "./home/ProcessSection.jsx";
+import ExpertiseSection from "./home/ExpertiseSection.jsx";
+import AboutSection from "./home/AboutSection.jsx";
+import ServicesSection from "./home/ServicesSection.jsx";
 
 export default function Home() {
     return (
         <>
-            <Header className='home-hero'>
-                <HomeHero/>
+            <Header className="home-hero">
+                <HomeHero />
             </Header>
             <main className="home-page">
-                <div className="container">
-                    <h1>home page</h1>
-                </div>
+                <ExpertiseSection />
+                <AboutSection />
+                <WhyUsSection />
+                <ServicesSection />
+                <ProcessSection />
             </main>
         </>
     );

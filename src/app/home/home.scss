@@ -1,0 +1,290 @@
+.home-hero {
+    position: relative;
+    overflow: hidden;
+    // background-color: #000 !important;
+    // background-image: linear-gradient(to right, #000, #403f41 50%);
+    // background-image: linear-gradient(to right, #000 20%, #403f41 70%);
+    background-image: linear-gradient(to right, #000 -8%, #403f41 64%);
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+    .cover {
+    //    object-position: top;
+       object-position: center 0px;
+       position: absolute;
+       top: 0;
+       left: 0;
+       bottom: 0;
+       right: 0;
+    //    width: 100%;
+    //    height: 100%;
+       transform-style: preserve-3d;
+       backface-visibility: hidden;
+       background-attachment: scroll;
+    }
+    .hero {
+        &-content {
+            color: #fff;
+            padding: 70px 0 170px;
+            @include mq(1200px) {
+                padding: 100px 0 200px;
+            }
+        }
+
+        &-description {
+            max-width: 600px;
+        }
+
+        &-title {
+            max-width: 600px;
+        }
+    }
+}
+
+.home-page {
+    br {
+        content: "";
+        height: 8px;
+        display: block;
+        //   font-size: 24%;
+    }
+    .expertise {
+        min-height: 700px;
+    }
+    .about {
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to right, color(dark) 20%, color(dark, 0.3) 70%);
+        }
+        &-content {
+            position: relative;
+            z-index: 1;
+            color: #fff;
+        }
+        &-description {
+            max-width: 500px;
+        }
+    }
+
+    .why-us {
+        &-title {
+            text-align: center;
+            @include mq(768px) {
+                margin-bottom: 60px;
+            }
+        }
+        .why-us-card-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .why-us-card {
+            border-radius: 15px;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+
+            @include mq(576px) {
+                width: calc(100% / 2 - 20px / 2);
+            }
+            @include mq(992px) {
+                width: calc(100% / 3 - (20px * 2) / 3);
+            }
+            .card {
+                &-icon {
+                    background-image: linear-gradient(to bottom, #69cbea, #3740b1);
+                    border-radius: 50%;
+                    // background-color: red;
+                    width: 108px;
+                    height: 108px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    margin: 0 auto;
+                    margin-bottom: 40px;
+                    svg {
+                        border-radius: 50%;
+                        box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 4;
+                        width: calc(100% + 9px);
+                        height: calc(100% + 9px);
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        path {
+                        }
+                    }
+
+                    img {
+                        width: 62px;
+                        height: 62px;
+                    }
+                }
+                &-sup-description {
+                    font-size: 12px;
+                    margin-bottom: 8px;
+                    text-transform: uppercase;
+                    @include mq(1420px) {
+                        font-size: 18px;
+                    }
+                }
+                &-title {
+                    background: -webkit-linear-gradient(#69cbea, #3740b1);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    text-transform: capitalize;
+                    margin-bottom: 10px;
+                    @include mq(1420px) {
+                        font-size: 30px;
+                    }
+                }
+                &-description {
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    text-transform: capitalize;
+                    @include mq(1420px) {
+                        font-size: 24px;
+                    }
+                }
+
+                &-image {
+                }
+            }
+        }
+    }
+
+    .services {
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to right, #000 20%, color(dark, 0.3) 90%);
+        }
+        &-content {
+            position: relative;
+            z-index: 1;
+            color: #fff;
+        }
+        &-title {
+            max-width: 700px;
+        }
+        &-description {
+            max-width: 500px;
+        }
+    }
+
+    .process {
+        &-title {
+            text-align: center;
+            @include mq(768px) {
+                margin-bottom: 60px;
+            }
+        }
+        .process-card-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .process-card {
+            border-radius: 15px;
+            padding: 20px;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            @include mq(576px) {
+                width: calc(100% / 2 - 20px / 2);
+            }
+            @include mq(992px) {
+                width: calc(100% / 3 - (20px * 2) / 3);
+            }
+            .card {
+                &-icon {
+                    background-image: linear-gradient(to bottom, #69cbea, #3740b1);
+                    border-radius: 50%;
+                    // background-color: red;
+                    width: 70px;
+                    height: 70px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    margin-bottom: 40px;
+                    color: #fff;
+                    font-size: 35px;
+                    font-weight: bold;
+                    svg {
+                        border-radius: 50%;
+                        box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 4;
+                        width: calc(100% + 6px);
+                        height: calc(100% + 6px);
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        path {
+                        }
+                    }
+
+                    img {
+                        width: 62px;
+                        height: 62px;
+                    }
+                }
+
+                &-title {
+                    background: -webkit-linear-gradient(#69cbea, #3740b1);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 22px; /* 100% */
+                    letter-spacing: 0.5px;
+                    text-transform: capitalize;
+                    margin-bottom: 20px;
+                    @include mq(1420px) {
+                        font-size: 22px;
+                    }
+                }
+                &-description {
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px; /* 171.429% */
+                    letter-spacing: 0.3px;
+                    color: color(secondary);
+                }
+
+                &-image {
+                }
+            }
+        }
+    }
+}

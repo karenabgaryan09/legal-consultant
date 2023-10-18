@@ -16,15 +16,16 @@
     vertical-align: middle;
     text-decoration: none;
     color: inherit;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-weight: 500;
-    font-size: 0.875rem;
+    font-family: "Poppins", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
     line-height: 1.75;
-    letter-spacing: 0.02857em;
-    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    white-space: nowrap;
+    text-transform: none;
     min-width: 64px;
-    padding: 6px 16px;
-    border-radius: 4px;
+    padding: 10px 25px;
+    border-radius: 8px;
     overflow: hidden;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
         box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
@@ -56,8 +57,13 @@
     //     }
     // }
     &.btn-lg {
-        font-size: 0.9375rem;
-        padding: 8px 22px;
+        font-size: 16px;
+        padding: 10px 25px;
+        @include mq(768px){
+            font-size: 20px;
+            padding: 13px 30px;
+
+        }
         svg {
             width: 23px;
             height: 23px;
@@ -143,12 +149,12 @@
         &-danger,
         &-light,
         &-dark {
-            padding: 5px 15px;
+            padding: 10px 25px;
             border: 1px solid;
             box-shadow: none;
             &:hover {
                 box-shadow: none;
-                border-color: currentColor;
+                // border-color: currentColor;
             }
             span.ripple {
                 opacity: 0.2;
@@ -193,9 +199,10 @@
         }
         &-warning {
             border-color: color(warning, 0.5);
-            color: color(warning);
+            // color: color(warning);
+            color: #fff;
             &:hover {
-                background-color: color(warning, 0.05);
+                background-color: color(warning);
             }
         }
         &-danger {
