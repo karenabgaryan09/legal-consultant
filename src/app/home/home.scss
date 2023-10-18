@@ -4,11 +4,11 @@
     // background-color: #000 !important;
     // background-image: linear-gradient(to right, #000, #403f41 50%);
     // background-image: linear-gradient(to right, #000 20%, #403f41 70%);
-    // background-image: linear-gradient(to right, #000 -8%, #403f41 64%);
-    background-image: url('../../assets/images/hero-cover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: linear-gradient(to right, #000 -8%, #403f41 64%);
+    // background-image: url('../../assets/images/hero-cover.jpg');
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center;
     @include mq(768px){
         min-height: 87vh;
     }
