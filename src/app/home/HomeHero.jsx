@@ -9,6 +9,18 @@ import { useState, useEffect, useRef } from "react";
 
 const HomeHero = () => {
     const { heroCover } = localData.images;
+
+    const [width,setWidth] = useState(0)
+    const [height,setHeight] = useState(0)
+    const [bottom, setBottom] = useState(360)
+    useEffect(()=>{
+        if(!window)return
+        setWidth(window.innerWidth)
+        setHeight(window.innerHeight)
+        setBottom(window.innerWidth > 1400 ? 360 : 300)
+    },[])
+
+
     const framerMotionParallax = useRef(null);
     const { scrollY, scrollYProgress } = useScroll({
         target: framerMotionParallax,
@@ -16,22 +28,16 @@ const HomeHero = () => {
     });
 
     const y = useTransform(scrollYProgress, [0, 1], [-20, 20]);
-    const bgimage = useTransform(scrollYProgress, [0, 1], [-360, 2000]);
+    const bgimage = useTransform(scrollYProgress, [0, 1], [-bottom, 2000]);
     // const bgimage = useTransform(scrollYProgress, [0, 1], [-230, 1000]);
     const yValue = useTransform(scrollYProgress, [0, 1], [0, 0]);
     const x = useTransform(scrollYProgress, [0, 1], [0, 120]);
 
-    const [width,setWidth] = useState(0)
-    const [height,setHeight] = useState(0)
-    useEffect(()=>{
-        if(!window)return
-        setWidth(window.innerWidth)
-        setHeight(window.innerHeight)
-    },[])
+
 
     return (
         <>
-            {width > 1000 && width < 2200 && height < 970 ? (
+            {width > 1000 && width < 2200 ? (
                 <motion.img style={{ y: bgimage }} className="cover" src={heroCover.src} alt="" />
             ) : (
                 <img src={heroCover.src} className="cover" alt='' />

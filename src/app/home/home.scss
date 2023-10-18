@@ -4,7 +4,14 @@
     // background-color: #000 !important;
     // background-image: linear-gradient(to right, #000, #403f41 50%);
     // background-image: linear-gradient(to right, #000 20%, #403f41 70%);
-    background-image: linear-gradient(to right, #000 -8%, #403f41 64%);
+    // background-image: linear-gradient(to right, #000 -8%, #403f41 64%);
+    background-image: url('../../assets/images/hero-cover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include mq(768px){
+        min-height: 87vh;
+    }
     .container {
         position: relative;
         z-index: 1;
@@ -17,18 +24,20 @@
        left: 0;
        bottom: 0;
        right: 0;
+       box-shadow: 0 19px 59px rgb(9 10 12);
     //    width: 100%;
     //    height: 100%;
        transform-style: preserve-3d;
        backface-visibility: hidden;
        background-attachment: scroll;
+
     }
     .hero {
         &-content {
             color: #fff;
-            padding: 70px 0 170px;
-            @include mq(1200px) {
-                padding: 100px 0 200px;
+            padding: 70px 0 100px;
+            @include mq(1400px) {
+                // padding: 100px 0 300px;
             }
         }
 
