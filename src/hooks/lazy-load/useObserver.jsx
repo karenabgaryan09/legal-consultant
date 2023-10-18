@@ -26,7 +26,8 @@ export function useObserver(options = { threshold: 0 }) {
 
   useEffect(() => {
     // Conditionally set the rootMargin based on the window width
-    const rootMargin = window && window.innerWidth > 576 ? "-300px" : "0px";
+    // const rootMargin = window && window.innerWidth > 576 ? "-300px" : "0px";
+    const rootMargin = '0px'
 
     const observer = new IntersectionObserver(([entry]) => {
       setIsIntersecting(entry.isIntersecting);
