@@ -18,6 +18,7 @@ const HomeHero = () => {
         setWidth(window.innerWidth)
         setHeight(window.innerHeight)
         setBottom(window.innerWidth > 1400 ? 360 : 300)
+
     },[])
 
 
@@ -37,7 +38,7 @@ const HomeHero = () => {
 
     return (
         <>
-            {width > 1000 && width < 2200 ? (
+            {width > 1000 && width < 2200 && height < 1000 ? (
                 <motion.img style={{ y: bgimage }} className="cover" src={heroCover.src} alt="" />
             ) : (
                 <img src={heroCover.src} className="cover" alt='' />
