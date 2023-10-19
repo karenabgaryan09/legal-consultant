@@ -20,7 +20,7 @@
 
 import React, { useEffect, useRef } from "react";
 
-export function useObserver(options = { threshold: 0 }) {
+export function useObserver(options = { threshold: 0.2 }) {
   const [isIntersecting, setIsIntersecting] = React.useState(false);
   const ref = useRef(null);
 

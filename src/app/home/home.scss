@@ -15,7 +15,8 @@
     // background-position: center;
     @include mq(992px){
         padding-top: 220px;
-        min-height: 87vh;
+        // min-height: 87vh;
+        min-height: 100vh;
     }
     .container {
         position: relative;
