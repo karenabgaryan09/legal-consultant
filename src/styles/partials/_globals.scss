@@ -386,3 +386,11 @@ section {
         }
     }
 }
+
+
+main {
+    &:not(.home-page){
+        
+        padding-top: 92px;
+    }
+}

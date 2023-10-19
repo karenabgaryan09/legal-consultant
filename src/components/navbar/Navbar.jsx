@@ -18,11 +18,21 @@ const links = [
 const civilLaw = [
     { href: "/civil/family-law", title: "family law", id: "civil-law-1" },
     { href: "/civil/inheritance-law", title: "inheritance law", id: "civil-law-2" },
+    { href: "/civil/crime-investigation", title: "crime investigation", id: "civil-law-3" },
+    { href: "/civil/real-estate", title: "real estate", id: "civil-law-4" },
+    { href: "/civil/immigration", title: "immigration", id: "civil-law-5" },
+    { href: "/civil/employment", title: "employment", id: "civil-law-6" },
 ];
 
 const commercialLaw = [
     { href: "/commercial/corporate", title: "corporate", id: "commercial-law-1" },
     { href: "/commercial/commerce", title: "commerce", id: "commercial-law-2" },
+    { href: "/commercial/tax-law", title: "tax law", id: "commercial-law-3" },
+    { href: "/commercial/digital-law", title: "digital law", id: "commercial-law-4" },
+    { href: "/commercial/intellectual-property", title: "Intellectual property", id: "commercial-law-5" },
+    { href: "/commercial/privacy-data-protection", title: "privacy & data protection", id: "commercial-law-6" },
+    { href: "/commercial/dispute-resolution", title: "dispute resolution", id: "commercial-law-7" },
+    { href: "/commercial/restructuring-insolvency", title: "restructuring & insolvency", id: "commercial-law-8" },
 ];
 
 const DrawerChild = ({ parentCallback }) => {
@@ -70,14 +80,21 @@ const DrawerChild = ({ parentCallback }) => {
     );
 };
 
-export default function Navbar() {
+export default function Navbar({className}) {
     // const location = useLocation();
     const pathname = usePathname();
     const { logo } = localData.images;
     const { bars, chevronRight } = localData.svgs;
 
+    useEffect(()=>{
+        window.addEventListener("scroll", () => {
+            const navbar = document.querySelector(".second-navbar");
+            if(navbar) navbar.classList.toggle("show", window.scrollY > 300);
+        }); //window.scrollY > 300
+    },[])
+
     return (
-        <nav className="navbar navbar-expand-lg">
+        <nav className={`navbar navbar-expand-lg ${className}`}>
             <div className="container">
                 <a className="navbar-brand" href="/">
                     <img src={logo.src} alt="" />

@@ -2,7 +2,7 @@ import logo from "@/assets/images/icons/logo.png";
 import notFound from "@/assets/images/not-found.png";
 import example from "@/assets/images/example.png";
 import placeholder from "@/assets/images/placeholder.webp";
-import heroCover from "@/assets/images/hero-cover.jpg";
+import showcaseCover from "@/assets/images/showcase-cover.jpg";
 import aboutCover from "@/assets/images/about-cover.jpg";
 import servicesCover from "@/assets/images/services-cover.jpg";
 import performance from "@/assets/images/icons/performance.png";
@@ -17,7 +17,7 @@ const localData = {
         notFound,
         example,
         placeholder,
-        heroCover,
+        showcaseCover,
         aboutCover,
         servicesCover,
         performance,

@@ -7,8 +7,8 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
 
-const HomeHero = () => {
-    const { heroCover } = localData.images;
+const ShowcaseSection = () => {
+    const { showcaseCover } = localData.images;
 
     const [width,setWidth] = useState(0)
     const [height,setHeight] = useState(0)
@@ -37,28 +37,28 @@ const HomeHero = () => {
 
 
     return (
-        <>
-            {width > 1000 && width < 2200 && height < 1000 ? (
-                <motion.img style={{ y: bgimage }} className="cover" src={heroCover.src} alt="" />
+        <section className="showcase">
+            {width > 1060 && width < 2200 && height < 1000 ? (
+                <motion.img style={{ y: bgimage }} className="cover" src={showcaseCover.src} alt="" />
             ) : (
-                <img src={heroCover.src} className="cover" alt='' />
+                <img src={showcaseCover.src} className="cover" alt='' />
             )}
 
             <div className="container">
-                <div className="hero-content">
-                    <h2 className="hero-description description text-warning">
+                <div className="showcase-content">
+                    <h2 className="showcase-description description text-warning">
                         Most Legal is a qualified law firm in Belgrade with international and
                         multidisciplinary practice.
                     </h2>
                     <br />
-                    <h1 className="hero-title display-1">Experience matters most</h1>
+                    <h1 className="showcase-title display-1">Experience matters most</h1>
                     <Link href="/not-exist" className="btn-link text-warning">
                         Learn More
                     </Link>
                 </div>
             </div>
-        </>
+        </section>
     );
 };
 
-export default HomeHero;
+export default ShowcaseSection;

@@ -8,70 +8,72 @@ export const metadata = {
 const InheritanceLaw = () => {
     return (
         <main className="inheritance-law-page markup-custom-style">
-        <section className="inheritance-law">
-            <div className="container">
+            <section className="inheritance-law">
                 <div className="container">
-                    <h1 className="text-1">inheritance Law</h1>
-                    <br />
-                    <hr />
-                    <br />
-                    <p>
-                        Our attorneys pride themselves on their professional yet sensitive approach to
-                        family matters. Our aim is to minimize stress and uncertainty by providing clear
-                        explanations of legal procedures and realistic expectations. We believe in
-                        empowering our clients with the knowledge necessary to make informed decisions
-                        that will shape their future. With many years of experience, we offer legal
-                        support on a wide array of legal issues, including international marriage and
-                        child abduction:
-                    </p>
-                    <br />
-                    <br />
-                    <hr />
-                    <br />
+                    <div className="container">
+                        <h1 className="text-1">inheritance Law</h1>
+                        <br />
+                        <hr />
+                        <br />
+                        <p>
+                            For most people the question of inheritance arises after a beloved person passes
+                            away. Potentially, unresolved property matters can lead to poor family relations.
+                            <br />
+                            Our lawyers provide legal support and represent before courts and public notaries
+                            in all inheritance matters:
+                        </p>
+                        <br />
+                        <br />
+                        <hr />
+                        <br />
 
-                    <ul>
-                        <li>
-                            <strong>alimony </strong> 
-                        </li>
-                        <li>
-                            <strong>child custody </strong>
-                        </li>
-                        <li>
-                            <strong>prenuptial agreement </strong>
-                        </li>
-                        <li>
-                            <strong>postnuptial agreement </strong>
-                        </li>
-                        <li>
-                            <strong>contested divorce procedure</strong>
-                        </li>
-                        <li>
-                            <strong>uncontested divorce procedure</strong>
-                        </li>
-                        <li>
-                            <strong>international child abduction</strong>
-                        </li>
-                        <li>
-                            <strong>child support and domestic violence</strong>
-                        </li>
-                    </ul>
-                    <br />
-                    <br />
+                        <ul>
+                            <li>
+                                <strong>will </strong>
+                            </li>
+                            <li>
+                                <strong>probate proceedings</strong>
+                            </li>
+                            <li>
+                                <strong>agreement on support for a lifetime</strong>
+                            </li>
+                            <li>
+                                <strong>exclusion of a heir</strong>
+                            </li>
+                            <li>
+                                <strong>annulment of a will</strong>
+                            </li>
+                            <li>
+                                <strong>uncontested divorce procedure</strong>
+                            </li>
+                            <li>
+                                <strong>dispute resolution among heirs</strong>
+                            </li>
+                            <li>
+                                <strong>enforcement of necessary share of a heir</strong>
+                            </li>
+                        </ul>
+                        <br />
+                        <br />
 
-                    <p>
-                        If you are unable to find common ground with your spouse or common-law partner on
-                        family matters, our team of lawyers and psychologists can assist you in reaching a
-                        peaceful solution. We understand the importance of minimizing conflict and
-                        protecting the best interests of all parties involved, especially the children.
-                        Through family mediation, we strive to facilitate discussion and find mutually
-                        acceptable solutions. In cases involving domestic violence, we are committed to
-                        offering a safe and supportive environment where victims can share their
-                        experiences and seek justice.
-                    </p>
+                        <p>
+                            If you have a property that you would like to divide among your future heirs in a
+                            manner that reflects their individual merit and accomplishments, our team of
+                            skilled lawyers is here to help. We understand the importance of ensuring a just
+                            distribution of your wealth, and our legal experts will work closely with you to
+                            draft a legally valid will that aligns with your intentions.
+                            <br />
+                            In situations where heirs find themselves unable to reach a consensus on how to
+                            share an inheritance, our team of experienced lawyers is committed to providing
+                            you with steadfast support. Through our expertise and mediation skills we
+                            alleviate tensions and help you to navigate the complexities of inheritance
+                            disputes and achieve a resolution that honors your interests and preserves
+                            familial harmony.
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
     );
 };
 

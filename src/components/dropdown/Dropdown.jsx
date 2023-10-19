@@ -100,7 +100,7 @@ export default function Dropdown({
                 <Button
                     className={`dropdown-toggle`}
                     data-toggle="dropdown"
-                    onClick={() => (isOpen ? closeMenu() : openMenu())}
+                    // onClick={() => (isOpen ? closeMenu() : openMenu())}
                     variant={variant}
                     color={color}
                     onKeyDown={handleKeyDown}

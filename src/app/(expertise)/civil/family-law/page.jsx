@@ -20,7 +20,9 @@ const FamilyLaw = () => {
                             family matters. Our aim is to minimize stress and uncertainty by providing clear
                             explanations of legal procedures and realistic expectations. We believe in
                             empowering our clients with the knowledge necessary to make informed decisions
-                            that will shape their future. With many years of experience, we offer legal
+                            that will shape their future.
+                            <br />
+                             With many years of experience, we offer legal
                             support on a wide array of legal issues, including international marriage and
                             child abduction:
                         </p>
@@ -64,7 +66,9 @@ const FamilyLaw = () => {
                             peaceful solution. We understand the importance of minimizing conflict and
                             protecting the best interests of all parties involved, especially the children.
                             Through family mediation, we strive to facilitate discussion and find mutually
-                            acceptable solutions. In cases involving domestic violence, we are committed to
+                            acceptable solutions.
+                            <br />
+                             In cases involving domestic violence, we are committed to
                             offering a safe and supportive environment where victims can share their
                             experiences and seek justice.
                         </p>

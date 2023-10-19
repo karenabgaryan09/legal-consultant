@@ -1,19 +1,16 @@
 .navbar {
-    width: 100%;
+    // width: 100%;
+    width: calc(100vw - 10px);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    // background-color: color(primary);
-    transition: padding 0.3s ease;
     position: relative;
     z-index: 998;
-    &.shrink {
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-    }
+
+
 
     & > .container {
         display: flex;
@@ -38,6 +35,7 @@
         white-space: nowrap;
         color: #fff;
         img {
+            display: block;
             max-width: 180px;
         }
     }
@@ -67,7 +65,7 @@
             color: rgba(255, 255, 255, 0.7);
             font-size: 12px;
             letter-spacing: 1.5px;
-            font-weight: 400;
+            font-weight: 500;
             background-color: transparent;
             border: none;
             // outline: none;
@@ -156,9 +154,54 @@
             }
         }
     }
+
 }
 
-@media (min-width: 992px) {
+
+.second-navbar {
+    &.show {
+        // opacity: 1;
+        pointer-events: auto;
+        transform: none;
+    }
+    // opacity: 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+    transform: translateY(-100%);
+    transition: .3s ease transform, .3s ease opacity;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #fff;
+        .nav-link,
+        .dropdown-toggle {
+            color: rgba(0, 0, 0, 0.7);
+            &:hover {
+                color: rgba(0, 0, 0, 1) !important;
+            }
+            &.active {
+                color: rgba(0, 0, 0, 1) !important;
+            }
+        }
+        .navbar-toggler {
+            svg {
+                path {
+                    fill: #000;
+                }
+            }
+        }
+        .learn-more-btn {
+            color: #000;
+            &:hover {
+                color: #fff;
+            }
+        }
+
+}
+
+@media (min-width: 1060px) {
     .navbar-expand-lg {
         .navbar {
             &-toggler {

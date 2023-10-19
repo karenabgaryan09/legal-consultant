@@ -1,5 +1,4 @@
-import { Header } from "@/components";
-import HomeHero from "./home/HomeHero.jsx";
+import ShowcaseSection from "./home/ShowcaseSection.jsx";
 import WhyUsSection from "./home/WhyUsSection.jsx";
 import ProcessSection from "./home/ProcessSection.jsx";
 import ExpertiseSection from "./home/ExpertiseSection.jsx";
@@ -8,17 +7,13 @@ import ServicesSection from "./home/ServicesSection.jsx";
 
 export default function Home() {
     return (
-        <>
-            <Header className="home-hero">
-                <HomeHero />
-            </Header>
-            <main className="home-page">
-                <ExpertiseSection />
-                <AboutSection />
-                <WhyUsSection />
-                <ServicesSection />
-                <ProcessSection />
-            </main>
-        </>
+        <main className="home-page">
+            <ShowcaseSection />
+            <ExpertiseSection />
+            <AboutSection />
+            <WhyUsSection />
+            <ServicesSection />
+            <ProcessSection />
+        </main>
     );
 }

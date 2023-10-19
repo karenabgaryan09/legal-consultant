@@ -8,7 +8,10 @@ export default function useLock() {
         document.body.style.paddingRight = lock ? scrollbarWidth : "";
 
         // const navbar = document.querySelector(".navbar");
-        // if (navbar) navbar.style.borderRight = lock ? `${scrollbarWidth} solid transparent` : "";
+        // const shrinkedNavbar = document.querySelector(".navbar.shrink");
+        // const style = lock ? `${scrollbarWidth} solid transparent` : "";
+        // if (navbar) navbar.style.borderRight = style
+        // if (shrinkedNavbar) shrinkedNavbar.style.borderRight = style
     }, []);
 
     const lockScroll = () => handleLock(true);
