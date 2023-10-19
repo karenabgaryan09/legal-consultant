@@ -23,7 +23,15 @@ const ExpertiseSection = () => {
                     >
                         <div className="icon">{landmark}</div>
                         <div className="content">
-                            <h4 className="title display-3">Civil Law</h4>
+                            <h4 className="title display-3">
+                                Civil Law{" "}
+                                <div
+                                    className={`line ${civilInView ? "lazy-animate" : ""}`}
+                                    data-lazy="fade-width-right"
+                                    style={{ transitionDelay: 1 + "s" }}
+                                ></div>
+                            </h4>
+
                             <ul>
                                 <li>
                                     <span className="check-icon">{check}</span>
@@ -33,7 +41,10 @@ const ExpertiseSection = () => {
                                 </li>
                                 <li>
                                     <span className="check-icon">{check}</span>
-                                    <Link href="/civil/crime-investigation" className="text-dark expertise-link">
+                                    <Link
+                                        href="/civil/crime-investigation"
+                                        className="text-dark expertise-link"
+                                    >
                                         Crime Investigation
                                     </Link>
                                 </li>
@@ -79,7 +90,13 @@ const ExpertiseSection = () => {
                     >
                         <div className="icon">{khanda}</div>
                         <div className="content">
-                            <h4 className="title display-3">Commercial Law</h4>
+                            <h4 className="title display-3">Commercial Law
+                            <div
+                                    className={`line ${commercialInView ? "lazy-animate" : ""}`}
+                                    data-lazy="fade-width-right"
+                                    style={{ transitionDelay: 1 + "s" }}
+                                ></div>
+                            </h4>
                             <ul>
                                 <li>
                                     <span className="check-icon">{check}</span>
@@ -95,13 +112,19 @@ const ExpertiseSection = () => {
                                 </li>
                                 <li>
                                     <span className="check-icon">{check}</span>
-                                    <Link href="/commercial/intellectual-property" className="text-dark expertise-link">
+                                    <Link
+                                        href="/commercial/intellectual-property"
+                                        className="text-dark expertise-link"
+                                    >
                                         Intellectual property
                                     </Link>
                                 </li>
                                 <li>
                                     <span className="check-icon">{check}</span>
-                                    <Link href="/commercial/dispute-resolution" className="text-dark expertise-link">
+                                    <Link
+                                        href="/commercial/dispute-resolution"
+                                        className="text-dark expertise-link"
+                                    >
                                         Dispute Resolution
                                     </Link>
                                 </li>
@@ -119,13 +142,19 @@ const ExpertiseSection = () => {
                                 </li>
                                 <li>
                                     <span className="check-icon">{check}</span>
-                                    <Link href="/commercial/privacy-data-protection" className="text-dark expertise-link">
+                                    <Link
+                                        href="/commercial/privacy-data-protection"
+                                        className="text-dark expertise-link"
+                                    >
                                         Privacy & Data Protection
                                     </Link>
                                 </li>
                                 <li>
                                     <span className="check-icon">{check}</span>
-                                    <Link href="/commercial/restructuring-insolvency" className="text-dark expertise-link">
+                                    <Link
+                                        href="/commercial/restructuring-insolvency"
+                                        className="text-dark expertise-link"
+                                    >
                                         Restructuring & Insolvency
                                     </Link>
                                 </li>

@@ -69,19 +69,6 @@ const Corporate = () => {
                         <br />
                         <br />
 
-                        <p>
-                            If you are unable to find common ground with your spouse or common-law partner on
-                            family matters, our team of lawyers and psychologists can assist you in reaching a
-                            peaceful solution. We understand the importance of minimizing conflict and
-                            protecting the best interests of all parties involved, especially the children.
-                            Through family mediation, we strive to facilitate discussion and find mutually
-                            acceptable solutions. In cases involving domestic violence, we are committed to
-                            offering a safe and supportive environment where victims can share their
-                            experiences and seek justice.
-                        </p>
-                        <br />
-                        <br />
-
                         <h1 className="text-1">Compliance</h1>
                         <br />
                         <hr />

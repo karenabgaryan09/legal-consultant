@@ -8,70 +8,71 @@ export const metadata = {
 const Commerce = () => {
     return (
         <main className="commerce-page markup-custom-style">
-        <section className="commerce">
-            <div className="container">
+            <section className="commerce">
                 <div className="container">
-                    <h1 className="text-1">Commerce</h1>
+                    <div className="container">
+                        <h1 className="text-1">Commerce</h1>
+                        <br />
+                        <hr />
+                        <br />
+                        <p>
+                            Trust is the bedrock of every relationship. At the same time trust is earned when
+                            actions meet words. That is why we believe that a well-drafted contract represents
+                            the cornerstone of every successful venture.
+                            <br />
+                            We provide complete legal support whenever you intend to enter, amend, supplement,
+                            enforce, terminate or annul a commercial agreement.
+                            <br />
+                            Our prudent lawyers specialize in drafting and reviewing contracts in the IT
+                            sector, such as Service Contracts, Employment Contracts, Software License
+                            Contracts.
+                            <br />
+                            In case your contract is not honored or you are subject to a contract claim, our
+                            legal team evaluates all available courses of action to settle the matter
+                            amicably. If your contract is going before a court, we provide steadfast support
+                            to preserve your interests and achieve an optimal outcome.
+                        </p>
+                        <br />
+                        <br />
+                        <hr />
+                        <br />
+
+                        <ul>
+                            <li><strong>Sale of Goods Agreement</strong></li>
+                            <li><strong>Sale of Services Agreement</strong></li>
+                            <li><strong>Agency Agreement</strong></li>
+                            <li><strong>Brokerage Agreement</strong></li>
+                            <li><strong>Joint Venture Agreement</strong></li>
+                            <li><strong>Business Cooperation Agreement</strong></li>
+                            <li><strong>Exclusive Distribution Agreement</strong></li>
+                            <li><strong>Intellectual Property Transfer Agreement</strong></li>
+                        </ul>
+                        <br />
+                    <br />
+                    <h1 className="text-1">Compliance</h1>
                     <br />
                     <hr />
                     <br />
-                    <p>
-                        Our attorneys pride themselves on their professional yet sensitive approach to
-                        family matters. Our aim is to minimize stress and uncertainty by providing clear
-                        explanations of legal procedures and realistic expectations. We believe in
-                        empowering our clients with the knowledge necessary to make informed decisions
-                        that will shape their future. With many years of experience, we offer legal
-                        support on a wide array of legal issues, including international marriage and
-                        child abduction:
-                    </p>
+                    <strong>strong</strong>
                     <br />
+                    <br />
+                    <strong>strong</strong>
+                    <br />
+                    <br />
+                    <p>Monetary Fine -</p>
+                    <br />
+                    <p>Criminal Liability</p>
+                    <br />
+                    <br />
+                    <br />
+                    <h1 className="text-1">Obligations</h1>
                     <br />
                     <hr />
                     <br />
-
-                    <ul>
-                        <li>
-                            <strong>alimony </strong> 
-                        </li>
-                        <li>
-                            <strong>child custody </strong>
-                        </li>
-                        <li>
-                            <strong>prenuptial agreement </strong>
-                        </li>
-                        <li>
-                            <strong>postnuptial agreement </strong>
-                        </li>
-                        <li>
-                            <strong>contested divorce procedure</strong>
-                        </li>
-                        <li>
-                            <strong>uncontested divorce procedure</strong>
-                        </li>
-                        <li>
-                            <strong>international child abduction</strong>
-                        </li>
-                        <li>
-                            <strong>child support and domestic violence</strong>
-                        </li>
-                    </ul>
-                    <br />
-                    <br />
-
-                    <p>
-                        If you are unable to find common ground with your spouse or common-law partner on
-                        family matters, our team of lawyers and psychologists can assist you in reaching a
-                        peaceful solution. We understand the importance of minimizing conflict and
-                        protecting the best interests of all parties involved, especially the children.
-                        Through family mediation, we strive to facilitate discussion and find mutually
-                        acceptable solutions. In cases involving domestic violence, we are committed to
-                        offering a safe and supportive environment where victims can share their
-                        experiences and seek justice.
-                    </p>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
     );
 };
 

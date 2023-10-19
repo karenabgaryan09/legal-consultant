@@ -9,43 +9,43 @@ const DigitalLaw = () => {
             <section className="inheritance-law">
                 <div className="container">
                     <div className="container">
-                        <h1 className="text-1">title</h1>
+                        <h1 className="text-1">Digital Law</h1>
                         <br />
                         <hr />
                         <br />
-                        <p>paragraph</p>
+                        <p>
+                            With the rise of web search engines, e-commerce became essential part of business
+                            and legal compliance online imperative.
+                            <br />
+                            Digitalization is rapidly evolving, and so does the expertise needed to navigate
+                            the laws on e-commerce.
+                            <br />
+                            Our lawyers consult clients on various aspects of online contracts, consumer
+                            protection, e-payments, and dispute resolution.
+                            <br />
+                            Serbia has recently issued a comprehensive set of laws on digital assets. Our
+                            legal team is ready to provide support in all regulatory aspects of digital tokens
+                            and cryptocurrencies transactions.
+                        </p>
                         <br />
                         <br />
-                        <hr />
                         <br />
-                        <h1 className="text-1">title2</h1>
+                        <h1 className="text-1">services</h1>
                         <br />
                         <hr />
                         <br />
                         <ul>
                             <li>
-                                <strong>item</strong>
+                                <strong>Gaming Industry</strong>
                             </li>
                             <li>
-                                <strong>item</strong>
+                                <strong>Electronic Commerce</strong>
                             </li>
                             <li>
-                                <strong>item</strong>
+                                <strong>Tokens & Cryptocurrencies</strong>
                             </li>
                             <li>
-                                <strong>item</strong>
-                            </li>
-                            <li>
-                                <strong>item</strong>
-                            </li>
-                            <li>
-                                <strong>item</strong>
-                            </li>
-                            <li>
-                                <strong>item</strong>
-                            </li>
-                            <li>
-                                <strong>item</strong>
+                                <strong>Tax Advisory in Digital Market</strong>
                             </li>
                         </ul>
                         <br />

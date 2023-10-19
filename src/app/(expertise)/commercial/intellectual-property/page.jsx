@@ -9,43 +9,78 @@ const IntellectualProperty = () => {
             <section className="inheritance-law">
                 <div className="container">
                     <div className="container">
-                        <h1 className="text-1">title</h1>
+                        <h1 className="text-1">Intellectual property</h1>
                         <br />
                         <hr />
                         <br />
-                        <p>paragraph</p>
+                        <p>
+                            In today ́s business world shaped by fierce competitiveness, protecting innovative
+                            ideas and brands is paramount.
+                            <br />
+                            The value of intellectual property portfolio can be substantially enhanced through
+                            subtle legal guidance.
+                            <br />
+                            We provide full support in protecting your intellectual property through prompt
+                            and effective enforcement measures.
+                            <br />
+                            In case of infringement, you can rely on our legal team to send cease and desist
+                            letters as well as to take appropriate legal action to address the infringement.
+                            <br />
+                            Most Legal offers services in the creative industries, such are art, music and
+                            movie. We work closely with artists, singers, directors and writers to provide
+                            practical guidance to protect and exploit their rights in the optimal way.
+                        </p>
                         <br />
                         <br />
-                        <hr />
                         <br />
-                        <h1 className="text-1">title2</h1>
+                        <h1 className="text-1">Services</h1>
                         <br />
                         <hr />
                         <br />
                         <ul>
                             <li>
-                                <strong>item</strong>
+                                <strong>Patent</strong>
                             </li>
                             <li>
-                                <strong>item</strong>
+                                <strong>Copyright</strong>
                             </li>
                             <li>
-                                <strong>item</strong>
+                                <strong>Trademark</strong>
                             </li>
                             <li>
-                                <strong>item</strong>
+                                <strong>Industrial design</strong>
                             </li>
                             <li>
-                                <strong>item</strong>
+                                <strong>Domain Name</strong>
                             </li>
                             <li>
-                                <strong>item</strong>
+                                <strong>Brand Development</strong>
                             </li>
                             <li>
-                                <strong>item</strong>
+                                <strong>Trade Secret</strong>
                             </li>
                             <li>
-                                <strong>item</strong>
+                                <strong>Privacy & Confidentiality</strong>
+                            </li>
+                        </ul>
+                        <br />
+                        <br />
+                        <h1 className="text-1">Drafting:</h1>
+                        <br />
+                        <hr />
+                        <br />
+                        <ul>
+                            <li>
+                                <strong>Copyright Agreement</strong>
+                            </li>
+                            <li>
+                                <strong>Patent License Agreement</strong>
+                            </li>
+                            <li>
+                                <strong>Trademark License Agreement</strong>
+                            </li>
+                            <li>
+                                <strong>Agreement on Intellectual Property Transfer</strong>
                             </li>
                         </ul>
                         <br />
